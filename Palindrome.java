@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Palindrome {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		String string = input.next();
+		String string = input.nextLine();
 		boolean bool = true;
 		for(int i = 0; i < string.length(); i++)
 			if (string.charAt(i) != string.charAt(string.length() - i - 1)) {

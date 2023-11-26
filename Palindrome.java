@@ -5,7 +5,7 @@ public class Palindrome {
 		String string = input.next();
 		boolean bool = true;
 		for(int i = 0; i < string.length(); i++)
-			if (!(String.valueOf(string.charAt(i)).equals(String.valueOf(string.charAt(string.length()-i-1))))) {
+			if (string.charAt(i) != string.charAt(string.length() - i - 1)) {
 				bool = false;
 				break;
 			}
